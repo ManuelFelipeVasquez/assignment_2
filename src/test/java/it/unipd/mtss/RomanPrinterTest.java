@@ -70,4 +70,55 @@ public class RomanPrinterTest {
 
         assertEquals(expected, result);
     }
+
+    @Test
+    public void testNumeralFour() throws RomanPrintException, RomanConversionException {
+        int number = 4;
+        String expected = new String(
+            " _____ __      __\n"+
+            "|_   _|\\ \\    / /\n"+
+            "  | |   \\ \\  / / \n"+
+            "  | |    \\ \\/ /  \n"+
+            " _| |_    \\  /   \n"+
+            "|_____|    \\/    \n"
+        );
+
+        String result = RomanPrinter.print(number);
+
+        assertEquals(expected, result);
+    }
+
+    @Test
+    public void testNumeralFive() throws RomanPrintException, RomanConversionException {
+        int number = 5;
+        String expected = new String(
+            "__      __\n"+
+            "\\ \\    / /\n"+
+            " \\ \\  / / \n"+
+            "  \\ \\/ /  \n"+
+            "   \\  /   \n"+
+            "    \\/    \n"
+        );
+
+        String result = RomanPrinter.print(number);
+
+        assertEquals(expected, result);
+    }
+
+    @Test
+    public void testNumeralSix() throws RomanPrintException, RomanConversionException {
+        int number = 6;
+        String expected = new String(
+            "__      __ _____ \n"+
+            "\\ \\    / /|_   _|\n"+
+            " \\ \\  / /   | |  \n"+
+            "  \\ \\/ /    | |  \n"+
+            "   \\  /    _| |_ \n"+
+            "    \\/    |_____|\n"
+        );
+
+        String result = RomanPrinter.print(number);
+
+        assertEquals(expected, result);
+    }
 }

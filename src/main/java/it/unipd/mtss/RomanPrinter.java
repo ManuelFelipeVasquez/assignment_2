@@ -21,12 +21,21 @@ public class RomanPrinter {
             " _| |_ ",
             "|_____|" 
         });
+
+        letters.put('V', new String[] {               
+           "__      __",
+           "\\ \\    / /",
+           " \\ \\  / / ",
+           "  \\ \\/ /  ",
+           "   \\  /   ",
+           "    \\/    "
+        });
     }
                 
     public static String print(int num) throws RomanPrintException, RomanConversionException {
         return printAsciiArt(IntegerToRoman.convert(num));
     }
-
+ 
     private static String printAsciiArt(String romanNumber) throws RomanPrintException {
         if (romanNumber.length() == 0) {
             return "";
@@ -38,7 +47,7 @@ public class RomanPrinter {
             for (int j=0; j < romanNumber.length(); j++) {
                 char c = romanNumber.charAt(j);
                 
-                if (c != 'I') {
+                if (!letters.containsKey(c)) {
                     throw new RomanPrintException();
                 }
 

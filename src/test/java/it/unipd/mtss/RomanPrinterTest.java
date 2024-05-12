@@ -240,4 +240,38 @@ public class RomanPrinterTest {
 
         assertEquals(expected, result);
     }
+
+    @Test
+    public void testNumeral400() throws RomanPrintException, RomanConversionException {
+        int number = 400;
+        String expected = new String(
+            "  _____  _____  \n"+ 
+            " / ____||  __ \\ \n"+
+            "| |     | |  | |\n"+
+            "| |     | |  | |\n"+
+            "| |____ | |__| |\n"+
+            " \\_____||_____/ \n"
+        );
+
+        String result = RomanPrinter.print(number);
+
+        assertEquals(expected, result);
+    }
+
+    @Test
+    public void testNumeral500() throws RomanPrintException, RomanConversionException {
+        int number = 500;
+        String expected = new String(
+            " _____  \n"+
+            "|  __ \\ \n"+
+            "| |  | |\n"+
+            "| |  | |\n"+
+            "| |__| |\n"+
+            "|_____/ \n"
+        );
+
+        String result = RomanPrinter.print(number);
+
+        assertEquals(expected, result);
+    }
 }

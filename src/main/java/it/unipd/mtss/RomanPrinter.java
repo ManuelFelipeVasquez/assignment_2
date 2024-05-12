@@ -58,6 +58,15 @@ public class RomanPrinter {
            " \\_____|"
         });
 
+        letters.put('D', new String[] {
+           " _____  ",
+           "|  __ \\ ",
+           "| |  | |",
+           "| |  | |",
+           "| |__| |",
+           "|_____/ "
+        });
+
     }
                 
     public static String print(int num) throws RomanPrintException, RomanConversionException {

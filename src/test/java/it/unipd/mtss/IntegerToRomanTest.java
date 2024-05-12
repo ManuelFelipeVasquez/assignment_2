@@ -170,4 +170,94 @@ public class IntegerToRomanTest {
 
         assertEquals(expected, roman_number);
     }
+
+    @Test
+    public void testNumberFiftyfour() throws RomanConversionException {
+        int arabic_number = 54;
+        String expected = "LIV";
+
+        String roman_number = converter.convert(arabic_number);
+
+        assertEquals(expected, roman_number);
+    }
+
+    @Test
+    public void testNumberFiftynine() throws RomanConversionException {
+        int arabic_number = 59;
+        String expected = "LIX";
+
+        String roman_number = converter.convert(arabic_number);
+
+        assertEquals(expected, roman_number);
+    }
+
+    @Test
+    public void testNumberSixty() throws RomanConversionException {
+        int arabic_number = 60;
+        String expected = "LX";
+
+        String roman_number = converter.convert(arabic_number);
+
+        assertEquals(expected, roman_number);
+    }
+
+    @Test
+    public void testNumberSixtyfour() throws RomanConversionException {
+        int arabic_number = 64;
+        String expected = "LXIV";
+
+        String roman_number = converter.convert(arabic_number);
+
+        assertEquals(expected, roman_number);
+    }
+
+    @Test
+    public void testNumberSixtynine() throws RomanConversionException {
+        int arabic_number = 69;
+        String expected = "LXIX";
+
+        String roman_number = converter.convert(arabic_number);
+
+        assertEquals(expected, roman_number);
+    }
+
+    @Test
+    public void testNumberNinety() throws RomanConversionException {
+        int arabic_number = 90;
+        String expected = "XC";
+
+        String roman_number = converter.convert(arabic_number);
+
+        assertEquals(expected, roman_number);
+    }
+
+    @Test
+    public void testNumberNinetyfour() throws RomanConversionException {
+        int arabic_number = 94;
+        String expected = "XCIV";
+
+        String roman_number = converter.convert(arabic_number);
+
+        assertEquals(expected, roman_number);
+    }
+
+    @Test
+    public void testNumberNinetynine() throws RomanConversionException {
+        int arabic_number = 99;
+        String expected = "XCIX";
+
+        String roman_number = converter.convert(arabic_number);
+
+        assertEquals(expected, roman_number);
+    }
+
+    @Test
+    public void testNumberOneHundred() throws RomanConversionException {
+        int arabic_number = 100;
+        String expected = "C";
+
+        String roman_number = converter.convert(arabic_number);
+
+        assertEquals(expected, roman_number);
+    }
 }

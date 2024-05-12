@@ -49,6 +49,15 @@ public class RomanPrinter {
            "|______|"
         });
 
+        letters.put('C', new String[] {
+           "  _____ ", 
+           " / ____|",
+           "| |     ",
+           "| |     ",
+           "| |____ ",
+           " \\_____|"
+        });
+
     }
                 
     public static String print(int num) throws RomanPrintException, RomanConversionException {

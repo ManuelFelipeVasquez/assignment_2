@@ -19,11 +19,13 @@ public class IntegerToRoman {
         ROMAN_NUMERALS.put(10, "X");        
         ROMAN_NUMERALS.put(40, "XL");
         ROMAN_NUMERALS.put(50, "L");
+        ROMAN_NUMERALS.put(90, "XC");
+        ROMAN_NUMERALS.put(100, "C");
     }
  
     public static String convert(int number) throws RomanConversionException {
-        if (number < 0 || number > 50) {
-            throw new RomanConversionException(50);
+        if (number < 0 || number > 100) {
+            throw new RomanConversionException(100);
         }
  
         StringBuilder romanNumber = new StringBuilder("");

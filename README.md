@@ -1,0 +1,3 @@
+[![Build](https://github.com/ManuelFelipeVasquez/assignment_2/actions/workflows/build.yml/badge.svg)](https://github.com/ManuelFelipeVasquez/assignment_2/actions/workflows/build.yml)
+[![Checkstyle workflow](https://github.com/ManuelFelipeVasquez/assignment_2/actions/workflows/checkstyle.yml/badge.svg)](https://github.com/ManuelFelipeVasquez/assignment_2/actions/workflows/checkstyle.yml)
+[![Coverage Status](https://coveralls.io/repos/github/ManuelFelipeVasquez/assignment_2/badge.svg?branch=main)](https://coveralls.io/github/ManuelFelipeVasquez/assignment_2?branch=main)

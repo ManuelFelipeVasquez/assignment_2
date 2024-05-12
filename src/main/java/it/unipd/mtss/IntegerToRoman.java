@@ -17,11 +17,13 @@ public class IntegerToRoman {
         ROMAN_NUMERALS.put(5, "V");
         ROMAN_NUMERALS.put(9, "IX");
         ROMAN_NUMERALS.put(10, "X");        
+        ROMAN_NUMERALS.put(40, "XL");
+        ROMAN_NUMERALS.put(50, "L");
     }
  
     public static String convert(int number) throws RomanConversionException {
-        if (number < 0 || number > 20) {
-            throw new RomanConversionException(20);
+        if (number < 0 || number > 50) {
+            throw new RomanConversionException(50);
         }
  
         StringBuilder romanNumber = new StringBuilder("");

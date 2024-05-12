@@ -129,4 +129,45 @@ public class IntegerToRomanTest {
 
         assertEquals(expected, roman_number);
     }
+
+    @Test
+    public void testNumberFourty() throws RomanConversionException {
+        int arabic_number = 40;
+        String expected = "XL";
+
+        String roman_number = converter.convert(arabic_number);
+
+        assertEquals(expected, roman_number);
+    }
+
+
+    @Test
+    public void testNumberFourtyfour() throws RomanConversionException {
+        int arabic_number = 44;
+        String expected = "XLIV";
+
+        String roman_number = converter.convert(arabic_number);
+
+        assertEquals(expected, roman_number);
+    }
+
+    @Test
+    public void testNumberFourtynine() throws RomanConversionException {
+        int arabic_number = 49;
+        String expected = "XLIX";
+
+        String roman_number = converter.convert(arabic_number);
+
+        assertEquals(expected, roman_number);
+    }
+
+    @Test
+    public void testNumberFifthy() throws RomanConversionException {
+        int arabic_number = 50;
+        String expected = "L";
+
+        String roman_number = converter.convert(arabic_number);
+
+        assertEquals(expected, roman_number);
+    }
 }

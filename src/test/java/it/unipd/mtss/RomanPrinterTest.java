@@ -171,5 +171,39 @@ public class RomanPrinterTest {
         String result = RomanPrinter.print(number);
  
         assertEquals(expected, result);
-    }  
+    }
+
+    @Test
+    public void testNumeral40() throws RomanPrintException, RomanConversionException {
+        int number = 40;
+        String expected = new String(
+            "__   __ _      \n"+ 
+            "\\ \\ / /| |     \n"+
+            " \\ V / | |     \n"+
+            "  > <  | |     \n"+
+            " / . \\ | |____ \n"+
+            "/_/ \\_\\|______|\n"
+        );
+
+        String result = RomanPrinter.print(number);
+
+        assertEquals(expected, result);
+    }
+
+    @Test
+    public void testNumeral50() throws RomanPrintException, RomanConversionException {
+        int number = 50;
+        String expected = new String(
+            " _      \n"+  
+            "| |     \n"+
+            "| |     \n"+
+            "| |     \n"+
+            "| |____ \n"+
+            "|______|\n"
+        );
+
+        String result = RomanPrinter.print(number);
+
+        assertEquals(expected, result);
+    }
 }

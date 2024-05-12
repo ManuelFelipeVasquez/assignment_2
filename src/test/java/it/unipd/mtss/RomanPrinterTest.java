@@ -155,4 +155,21 @@ public class RomanPrinterTest {
 
         assertEquals(expected, result);
     }
+
+    @Test
+    public void testNumeral20() throws RomanPrintException, RomanConversionException {
+        int number = 20;
+        String expected = new String(
+            "__   ____   __\n"+
+            "\\ \\ / /\\ \\ / /\n"+
+            " \\ V /  \\ V / \n"+
+            "  > <    > <  \n"+
+            " / . \\  / . \\ \n"+
+            "/_/ \\_\\/_/ \\_\\\n"
+        );
+ 
+        String result = RomanPrinter.print(number);
+ 
+        assertEquals(expected, result);
+    }  
 }

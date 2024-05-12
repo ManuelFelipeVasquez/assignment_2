@@ -39,6 +39,7 @@ public class RomanPrinter {
            " / . \\ ",
            "/_/ \\_\\"
         });
+
     }
                 
     public static String print(int num) throws RomanPrintException, RomanConversionException {

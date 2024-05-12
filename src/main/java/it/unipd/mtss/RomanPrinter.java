@@ -23,12 +23,12 @@ public class RomanPrinter {
         });
 
         letters.put('V', new String[] {               
-           "__      __",
-           "\\ \\    / /",
-           " \\ \\  / / ",
-           "  \\ \\/ /  ",
-           "   \\  /   ",
-           "    \\/    "
+            "__      __",
+            "\\ \\    / /",
+            " \\ \\  / / ",
+            "  \\ \\/ /  ",
+            "   \\  /   ",
+            "    \\/    "
         });
 
         letters.put('X', new String[] {
@@ -50,12 +50,12 @@ public class RomanPrinter {
         });
 
         letters.put('C', new String[] {
-           "  _____ ", 
-           " / ____|",
-           "| |     ",
-           "| |     ",
-           "| |____ ",
-           " \\_____|"
+            "  _____ ", 
+            " / ____|",
+            "| |     ",
+            "| |     ",
+            "| |____ ",
+            " \\_____|"
         });
 
         letters.put('D', new String[] {
@@ -67,12 +67,20 @@ public class RomanPrinter {
            "|_____/ "
         });
 
+        letters.put('M', new String[] {
+           " __  __ " ,
+           "|  \\/  |",
+           "| \\  / |",
+           "| |\\/| |",
+           "| |  | |",
+           "|_|  |_|"
+        });
     }
                 
     public static String print(int num) throws RomanPrintException, RomanConversionException {
         return printAsciiArt(IntegerToRoman.convert(num));
     }
-
+ 
     private static String printAsciiArt(String romanNumber) throws RomanPrintException {
         if (romanNumber.length() == 0) {
             return "";

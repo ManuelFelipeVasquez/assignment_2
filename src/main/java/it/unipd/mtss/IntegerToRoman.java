@@ -10,7 +10,7 @@ import it.unipd.mtss.exceptions.RomanConversionException;
 
 public class IntegerToRoman {
     private static final TreeMap<Integer, String> ROMAN_NUMERALS = new TreeMap<>();
- 
+
     static {
         ROMAN_NUMERALS.put(1, "I");
         ROMAN_NUMERALS.put(4, "IV");
@@ -23,11 +23,13 @@ public class IntegerToRoman {
         ROMAN_NUMERALS.put(100, "C");
         ROMAN_NUMERALS.put(400, "CD");
         ROMAN_NUMERALS.put(500, "D");
+        ROMAN_NUMERALS.put(900, "CM");
+        ROMAN_NUMERALS.put(1000, "M");
     }
  
     public static String convert(int number) throws RomanConversionException {
-        if (number < 0 || number > 500) {
-            throw new RomanConversionException(500);
+        if (number < 0 || number > 1000) {
+            throw new RomanConversionException(1000);
         }
  
         StringBuilder romanNumber = new StringBuilder("");

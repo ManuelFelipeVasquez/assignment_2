@@ -310,4 +310,44 @@ public class IntegerToRomanTest {
 
         assertEquals(expected, roman_number);
     }
+
+    @Test
+    public void testNumberFiveHundredNinety() throws RomanConversionException {
+        int arabic_number = 590;
+        String expected = "DXC";
+
+        String roman_number = converter.convert(arabic_number);
+
+        assertEquals(expected, roman_number);
+    }
+
+    @Test
+    public void testNumberNineHundred() throws RomanConversionException {
+        int arabic_number = 900;
+        String expected = "CM";
+
+        String roman_number = converter.convert(arabic_number);
+
+        assertEquals(expected, roman_number);
+    }
+
+    @Test
+    public void testNumberNineHundredNinety() throws RomanConversionException {
+        int arabic_number = 990;
+        String expected = "CMXC";
+
+        String roman_number = converter.convert(arabic_number);
+
+        assertEquals(expected, roman_number);
+    }
+
+    @Test
+    public void testNumberOneThousand() throws RomanConversionException {
+        int arabic_number = 1000;
+        String expected = "M";
+
+        String roman_number = converter.convert(arabic_number);
+
+        assertEquals(expected, roman_number);
+    }
 }

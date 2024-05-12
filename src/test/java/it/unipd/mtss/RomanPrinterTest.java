@@ -38,7 +38,7 @@ public class RomanPrinterTest {
     }
     
     @Test
-    public void testNumeralOne() throws RomanPrintException, RomanConversionException {
+    public void testNumeral1() throws RomanPrintException, RomanConversionException {
         int number = 1;
         String expected = new String(
             " _____ \n" +
@@ -55,7 +55,7 @@ public class RomanPrinterTest {
     }
 
     @Test
-    public void testNumeralThree() throws RomanPrintException, RomanConversionException {
+    public void testNumeral3() throws RomanPrintException, RomanConversionException {
         int number = 3;
         String expected = new String(
             " _____  _____  _____ \n"+
@@ -72,7 +72,7 @@ public class RomanPrinterTest {
     }
 
     @Test
-    public void testNumeralFour() throws RomanPrintException, RomanConversionException {
+    public void testNumeral4() throws RomanPrintException, RomanConversionException {
         int number = 4;
         String expected = new String(
             " _____ __      __\n"+
@@ -89,7 +89,7 @@ public class RomanPrinterTest {
     }
 
     @Test
-    public void testNumeralFive() throws RomanPrintException, RomanConversionException {
+    public void testNumeral5() throws RomanPrintException, RomanConversionException {
         int number = 5;
         String expected = new String(
             "__      __\n"+
@@ -106,7 +106,7 @@ public class RomanPrinterTest {
     }
 
     @Test
-    public void testNumeralSix() throws RomanPrintException, RomanConversionException {
+    public void testNumeral6() throws RomanPrintException, RomanConversionException {
         int number = 6;
         String expected = new String(
             "__      __ _____ \n"+
@@ -115,6 +115,40 @@ public class RomanPrinterTest {
             "  \\ \\/ /    | |  \n"+
             "   \\  /    _| |_ \n"+
             "    \\/    |_____|\n"
+        );
+
+        String result = RomanPrinter.print(number);
+
+        assertEquals(expected, result);
+    }
+
+    @Test
+    public void testNumeral9() throws RomanPrintException, RomanConversionException {
+        int number = 9;
+        String expected = new String(
+            " _____ __   __\n"+
+            "|_   _|\\ \\ / /\n"+
+            "  | |   \\ V / \n"+
+            "  | |    > <  \n"+
+            " _| |_  / . \\ \n"+
+            "|_____|/_/ \\_\\\n"
+        );
+
+        String result = RomanPrinter.print(number);
+
+        assertEquals(expected, result);
+    }
+
+    @Test
+    public void testNumeral10() throws RomanPrintException, RomanConversionException {
+        int number = 10;
+        String expected = new String(
+            "__   __\n"+
+            "\\ \\ / /\n"+
+            " \\ V / \n"+
+            "  > <  \n"+
+            " / . \\ \n"+
+            "/_/ \\_\\\n"
         );
 
         String result = RomanPrinter.print(number);

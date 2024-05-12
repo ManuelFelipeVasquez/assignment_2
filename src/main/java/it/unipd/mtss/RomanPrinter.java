@@ -30,12 +30,21 @@ public class RomanPrinter {
            "   \\  /   ",
            "    \\/    "
         });
+
+        letters.put('X', new String[] {
+           "__   __",
+           "\\ \\ / /",
+           " \\ V / ",
+           "  > <  ",
+           " / . \\ ",
+           "/_/ \\_\\"
+        });
     }
                 
     public static String print(int num) throws RomanPrintException, RomanConversionException {
         return printAsciiArt(IntegerToRoman.convert(num));
     }
- 
+
     private static String printAsciiArt(String romanNumber) throws RomanPrintException {
         if (romanNumber.length() == 0) {
             return "";
